@@ -8,6 +8,9 @@
  * @copyright 2012 Sébastien SAUVAGE (sebsauvage.net)
  * @license   https://www.opensource.org/licenses/zlib-license.php The zlib/libpng License
  * @version   1.5.1
+ * @category  PrivateBin
+ * @package   PrivateBin
+ * @author    Sébastien SAUVAGE (sebsauvage.net)
  */
 
 namespace PrivateBin\Data;
@@ -16,6 +19,11 @@ namespace PrivateBin\Data;
  * AbstractData
  *
  * Abstract model for data access
+ *
+ * @author Sébastien SAUVAGE (sebsauvage.net)
+ * @access public
+ * @abstract
+ * @package PrivateBin
  */
 abstract class AbstractData
 {
