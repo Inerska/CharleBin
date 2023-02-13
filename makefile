@@ -12,5 +12,5 @@ lint:
 	./vendor/bin/phpcs --extensions=php ./lib/
 	./vendor/bin/phpmd ./lib ansi codesize,unusedcode,naming,design,controversial,cleancode
 
-debug:
+dev:
 	php -dxdebug.mode=debug -dxdebug.start_with_request=yes -S localhost:8080
