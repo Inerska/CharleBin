@@ -14,13 +14,13 @@ jobs:
         uses: actions/checkout@v2
       - name: Install dependencies
         run: npm install
-      - name: Start the application
-        run: make start &
-      - name: Wait for the application to start
-        run: wait-on http://localhost:8080
-      - name: Run Cypress Tests
-        run: npx cypress run
-        env:
-          CYPRESS_baseUrl: http://localhost:8080
+      - name: Cypress run
+        uses: cypress-io/github-action@v1
+        with:
+          record: true
+          parallel: true
+          start: make start
+          wait-on: 'http://localhost:8080'
+          env: stage=LOCAL
       - name: Stop the application
         run: killall make
