@@ -17,7 +17,7 @@ jobs:
       - name: Start the application
         run: make start &
       - name: Run Cypress Tests
-        run: npm run cypress:run
+        run: npx cypress run
         env:
           CYPRESS_baseUrl: http://localhost:8080
       - name: Stop the application
