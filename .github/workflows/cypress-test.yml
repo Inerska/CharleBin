@@ -16,6 +16,8 @@ jobs:
         run: npm install
       - name: Start the application
         run: make start &
+      - name: Wait for the application to start
+        run: wait-on http://localhost:8080
       - name: Run Cypress Tests
         run: npx cypress run
         env:
