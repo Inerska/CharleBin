@@ -4,17 +4,18 @@ describe('template spec', () => {
   })
 
   /* ==== Test Created with Cypress Studio ==== */
-  it('Création d\'un paste avec mot de passe et vérification du mot de passe lors de l\'utilisation', function() {
+  it('should create a paste with password and open it with the same password without any issues', function() {
     /* ==== Generated with Cypress Studio ==== */
     cy.visit('localhost:8080');
-    cy.get('#passwordinput').clear('t');
-    cy.get('#passwordinput').type('motdepasse');
-    cy.get('body').click();
     cy.get('#message').click();
+    cy.get('#message').type('Je suis Philippe Dosch');
+    cy.get('#passwordinput').clear('p');
+    cy.get('#passwordinput').type('philippe');
+    cy.wait(10000);
     cy.get('#sendbutton').click();
     cy.get('#pasteurl').click();
-    cy.get('#passworddecrypt').clear('m');
-    cy.get('#passworddecrypt').type('motdepasse');
+    cy.get('#passworddecrypt').clear('p');
+    cy.get('#passworddecrypt').type('philippe');
     cy.get('#passwordform > .btn').click();
     /* ==== End Cypress Studio ==== */
   });
