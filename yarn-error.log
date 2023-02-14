@@ -1,0 +1,30 @@
+Arguments: 
+  /opt/homebrew/Cellar/node/19.5.0/bin/node /opt/homebrew/Cellar/yarn/1.22.19/libexec/bin/yarn.js add cypress --dev
+
+PATH: 
+  /opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/alexischangridel/.fig/bin:/Users/alexischangridel/.local/bin:/Users/alexischangridel/Library/Application Support/JetBrains/Toolbox/scripts
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  19.5.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: ENOSPC: no space left on device, mkdir '/Users/alexischangridel/Library/Caches/Yarn/v6/npm-is-unicode-supported-0.1.0-3f26c76a809593b52bfa2ecb5710ed2779b522a7-integrity'
+
+npm manifest: 
+  {
+    "devDependencies": {
+      "cypress": "^12.5.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

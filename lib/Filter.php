@@ -51,7 +51,7 @@ class Filter
     }
 
     /**
-     * format a given number of bytes in IEC 80000-13:2008 notation (localized)
+     * non format a given number of bytes in IEC 80000-13:2008 notation (localized)
      *
      * @access public
      * @static
