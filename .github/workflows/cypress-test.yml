@@ -1,0 +1,23 @@
+name: Run Cypress Tests to validate the application
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  run-cypress-tests:
+  runs-on: ubuntu-latest
+  steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Install dependencies
+      run: npm install
+    - name: Start the application
+      run: make start
+    - name: Run Cypress Tests
+      run: npm run cypress:run
+      env:
+        CYPRESS_baseUrl: http://localhost:8080
+
